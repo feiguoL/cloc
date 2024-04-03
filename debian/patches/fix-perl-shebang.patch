@@ -1,0 +1,52 @@
+Description: Update interpreter path as per Debian Policy 10.4
+Author: tony mancill <tmancill@debian.org>
+Forwarded: not-needed
+
+--- a/Unix/cloc
++++ b/Unix/cloc
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env perl
++#!/usr/bin/perl
+ # cloc -- Count Lines of Code                  {{{1
+ # Copyright (C) 2006-2023 Al Danial <al.danial@gmail.com>
+ # First release August 2006
+--- a/Unix/t/00_C.t
++++ b/Unix/t/00_C.t
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env perl
++#!/usr/bin/perl
+ use warnings;
+ use strict;
+ use Test::More;
+--- a/Unix/t/01_opts.t
++++ b/Unix/t/01_opts.t
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env perl
++#!/usr/bin/perl
+ use warnings;
+ use strict;
+ use Test::More;
+--- a/Unix/t/02_git.t
++++ b/Unix/t/02_git.t
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env perl
++#!/usr/bin/perl
+ use warnings;
+ use strict;
+ use Test::More;
+--- a/cloc
++++ b/cloc
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env perl
++#!/usr/bin/perl
+ # cloc -- Count Lines of Code                  {{{1
+ # Copyright (C) 2006-2023 Al Danial <al.danial@gmail.com>
+ # First release August 2006
+--- a/sqlite_formatter
++++ b/sqlite_formatter
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env perl
++#!/usr/bin/perl
+ use warnings;
+ use strict;
+ #

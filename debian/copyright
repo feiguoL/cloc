@@ -1,9 +1,86 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: template-repository
-Source: https://github.com/deepin-community/template-repository
+Upstream-Name: cloc
+Upstream-Contact:
+ Al Danial <al@danial.org>, <al.danial@gmail.com>, <alnd@users.sourceforge.net>
+Source: https://github.com/AlDanial/cloc
+X-Upstream-Vcs: https://github.com/AlDanial/cloc
+X-Upstream-Bugs:https://github.com/AlDanial/cloc/issues
+X-Source: https://github.com/AlDanial/cloc
 
 Files: *
-Copyright: 2023 Tsic404 <liuheng@deepin.org>
+Copyright: Copyright (C) 2006-2023 Al Danial <al.danial@gmail.com>
+License: GPL-2+
+X-License-Comment:
+ [from cloc.pl: contains the following and standard GPL-2+]
+ .
+ # cloc -- Count Lines of Code                  {{{1
+ # Copyright (C) 2006-2017 Al Danial <al.danial@gmail.com>
+ # First release August 2006
+ #
+ # Includes code from:
+ #   - SLOCCount v2.26
+ #     http://www.dwheeler.com/sloccount/
+ #     by David Wheeler.
+ #   - Win32::Autoglob
+ #     http://search.cpan.org/~sburke/Win32-Autoglob-1.01/Autoglob.pm
+ #     by Sean M. Burke.
+ .
+ [Standard GPL-2+ text follows]
+ .
+ [For the embedded package Regexp::Common::balanced]
+ #    Copyright (c) 2001 - 2003, Damian Conway. All Rights Reserved.
+ #      This module is free software. It may be used, redistributed
+ #     and/or modified under the terms of the Perl Artistic License
+ #           (see http://www.perl.com/perl/misc/Artistic.html)
+ .
+ [For the embedded EOAlgDiff]
+ # This version released by Tye McQueen (http://perlmonks.org/?node=tye).
+ #
+ # =head1 LICENSE
+ #
+ # Parts Copyright (c) 2000-2004 Ned Konz.  All rights reserved.
+ # Parts by Tye McQueen.
+ #
+ # This program is free software; you can redistribute it and/or modify it
+ # under the same terms as Perl.
+ #
+ # =head1 MAILING LIST
+ #
+ # Mark-Jason still maintains a mailing list.  To join a low-volume mailing
+ # list for announcements related to diff and Algorithm::Diff, send an
+ # empty mail message to mjd-perl-diff-request@plover.com.
+ # =head1 CREDITS
+ #
+ # Versions through 0.59 (and much of this documentation) were written by:
+ #
+ # Mark-Jason Dominus, mjd-perl-diff@plover.com
+ #
+ # This version borrows some documentation and routine names from
+ # Mark-Jason's, but Diff.pm's code was completely replaced.
+ #
+ # This code was adapted from the Smalltalk code of Mario Wolczko
+ # <mario@wolczko.com>, which is available at
+ # ftp://st.cs.uiuc.edu/pub/Smalltalk/MANCHESTER/manchester/4.0/diff.st
+ #
+ # C<sdiff> and C<traverse_balanced> were written by Mike Schilli
+ # <m@perlmeister.com>.
+ #
+ # The algorithm is that described in
+ # I<A Fast Algorithm for Computing Longest Common Subsequences>,
+ # CACM, vol.20, no.5, pp.350-353, May 1977, with a few
+ # minor improvements to improve the speed.
+ #
+ # Much work was done by Ned Konz (perl@bike-nomad.com).
+ #
+ # The OO interface and some other changes are by Tye McQueen.
+ #
+
+Files: debian/*
+Copyright:
+ 2010-2016 Jari Aalto <jari.aalto@cante.net>
+ 2018-2023 tony mancill <tmancill@debian.org>
+License: GPL-2+
+
 License: GPL-2+
  This package is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
@@ -12,11 +89,11 @@ License: GPL-2+
  .
  This package is distributed in the hope that it will be useful,
  but WITHOUT ANY WARRANTY; without even the implied warranty of
- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
  GNU General Public License for more details.
  .
  You should have received a copy of the GNU General Public License
- along with this program. If not, see <https://www.gnu.org/licenses/>
+ along with this program. If not, see <http://www.gnu.org/licenses/>.
  .
  On Debian systems, the complete text of the GNU General
- Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
+ Public License can be found in "/usr/share/common-licenses/GPL-2".

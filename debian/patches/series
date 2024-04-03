@@ -1,0 +1,2 @@
+disable-tests-that-require-git-repo.patch
+fix-perl-shebang.patch

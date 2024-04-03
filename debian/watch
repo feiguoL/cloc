@@ -1,0 +1,5 @@
+version=4
+opts="filenamemangle=s/.+\/v?(\d\S*)\.tar\.gz/cloc-$1\.tar\.gz/,\
+      repack,\
+      compression=xz" \
+https://github.com/AlDanial/cloc/tags .*/v?(\d\S*)\.tar\.gz

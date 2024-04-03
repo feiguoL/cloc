@@ -1,5 +1,233 @@
-template-repository (1.0-1) unstable; urgency=medium
+cloc (1.98-1) unstable; urgency=medium
 
-  * Initial release
+  * New upstream version 1.98
+  * Update Maintainer field (Closes: #920103)
+  * Clean up after tests to permit rebuild (Closes: #1043679)
+  * Remove stray "binary" target in debian/rules
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- tony mancill <tmancill@debian.org>  Tue, 19 Sep 2023 10:22:58 -0700
+
+cloc (1.96.1-1) unstable; urgency=medium
+
+  * New upstream version 1.96.1
+  * Freshen years in debian/copyright
+
+ -- tony mancill <tmancill@debian.org>  Sun, 30 Jul 2023 21:19:18 -0700
+
+cloc (1.96-1) unstable; urgency=medium
+
+  * New upstream version 1.96
+  * Bump Standards-Version to 4.6.2
+
+ -- tony mancill <tmancill@debian.org>  Thu, 29 Dec 2022 07:08:07 -0800
+
+cloc (1.94-1) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Database, Bug-Submit
+    Repository, Repository-Browse.
+
+  [ tony mancill ]
+  * New upstream version 1.94
+  * Bump Standards-Version to 4.6.1
+
+ -- tony mancill <tmancill@debian.org>  Sat, 09 Jul 2022 21:47:56 -0700
+
+cloc (1.92-1) unstable; urgency=medium
+
+  * New upstream version 1.92
+  * Bump Standards-Version to 4.6.0
+
+ -- tony mancill <tmancill@debian.org>  Tue, 22 Mar 2022 20:12:10 -0700
+
+cloc (1.90-1) unstable; urgency=medium
+
+  * New upstream version 1.90
+  * Freshen debian/copyright
+  * Bump Standards-Version to 4.5.1
+
+ -- tony mancill <tmancill@debian.org>  Sun, 15 Aug 2021 20:17:41 -0700
+
+cloc (1.86-1) unstable; urgency=medium
+
+  * New upstream version 1.86
+  * Use debhelper-compat 13
+  * Bump Standards-Version to 4.5.0
+  * Refresh patches against new upstream version
+  * Freshen debian/copyright
+  * Set "Rules-Requires-Root: no" in debian/control
+
+ -- tony mancill <tmancill@debian.org>  Sun, 05 Jul 2020 21:22:06 -0700
+
+cloc (1.82-1) unstable; urgency=medium
+
+  * New upstream version 1.82
+  * Bump Standards-Version to 4.4.0
+  * Use debhelper 12
+  * Freshen years in debian/copyright
+  * Refresh patches for new upstream release
+  * Add unzip to build-deps (used during tests)
+
+ -- tony mancill <tmancill@debian.org>  Sun, 07 Jul 2019 19:54:29 -0700
+
+cloc (1.80-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/copyright: Change Format URL to correct one
+
+  [ tony mancill ]
+  * New upstream version 1.80 (Closes: #903737)
+  * Bump Standards-Version to 4.3.0
+  * Add patch to fix Perl interpreter path as per Debian policy 10.4
+  * Refresh patch to disable git tests requiring a cloned upstream repo
+  * Freshen debian/copyright years
+  * Use /usr/share/dpkg/pkg-info.mk variable for PODDATE
+  * Check DEB_BUILD_OPTIONS before running tests
+
+ -- tony mancill <tmancill@debian.org>  Sun, 24 Feb 2019 18:27:08 -0800
+
+cloc (1.76-1) unstable; urgency=medium
+
+  * New upstream version 1.76
+  * Update Vcs fields for migration from Alioth -> Salsa
+  * Update debian/watch to use xz compression
+  * Bump Standards-Version to 4.1.4
+  * Add dependency and build-dep on libparallel-forkmanager-perl
+
+ -- tony mancill <tmancill@debian.org>  Sun, 22 Apr 2018 14:16:30 -0700
+
+cloc (1.74-1) unstable; urgency=medium
+
+  * New upstream version 1.74
+  * Use debhelper 11
+  * Add tmancill@debian.org to Uploaders
+  * Bump Standards-Version to 4.1.3
+  * Add patch to ignore tests that expect upstream git repo
+  * Freshen debian/copyright
+
+ -- tony mancill <tmancill@debian.org>  Fri, 02 Feb 2018 21:05:29 -0800
+
+cloc (1.70-1) unstable; urgency=medium
+
+  * New upstream release.
+  * ACK NMU, thanks Orestis.
+  * debian/control
+    - (Standards-Version): Update to 3.9.8.
+    - (Vcs-*): Update to anonscm.debian.org.
+
+ -- Jari Aalto <jari.aalto@cante.net>  Fri, 21 Oct 2016 17:38:28 +0300
+
+cloc (1.68-1.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * New upstream release (Closes: #823949, #802750).
+  * Add patch from DKG to make package reproducible (Closes: #787669).
+  * Remove patch for perl 5.22 since it was fixed upstream.
+  * Corrected VCS and homepage links in control and copyright files.
+  * Updated Standards-Versions (Nothing to change).
+  * Wrap-and-sorted.
+
+ -- Orestis Ioannou <orestis@oioannou.com>  Sun, 12 Jun 2016 23:25:18 +0200
+
+cloc (1.60-1.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Add a patch fixing usage of 'defined(@array)' and unescaped left brace in
+    regular expressions
+    Closes: #788891 -- FTBFS with perl 5.22
+
+ -- Damyan Ivanov <dmn@debian.org>  Fri, 24 Jul 2015 10:17:56 +0000
+
+cloc (1.60-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/copyright
+    - Update years.
+  * debian/rules
+    - (get-changelog): Update URL.
+  * debian/upstream.changelog
+    - Sync with release.
+  * debian/watch
+    - Update regexp from *.pl to *.tar.gz.
+
+ -- Jari Aalto <jari.aalto@cante.net>  Tue, 20 Aug 2013 07:51:51 +0300
+
+cloc (1.58-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/copyright
+    - Update year.
+  * debian/control
+    - (Standards-Version): 3.9.4.
+  * debian/{pod2man.mk,cloc.1.pod}
+    - Delete. Accepted upstream.
+  * debian/rules
+    - (man): Remove target. Manual page accepted upstream.
+    - (override_dh_auto_build): New.
+
+ -- Jari Aalto <jari.aalto@cante.net>  Fri, 15 Mar 2013 09:16:20 +0200
+
+cloc (1.56-1) unstable; urgency=low
+
+  * New upstream release
+    - Includes fix for: Can't call method "pascal_files" (Closes: #677478).
+  * debian/control
+    - (Standards-Version): Update to 3.9.3.
+  * debian/copyright
+    - (Format): Point URL to 1.0.
+  * debian/patches
+    - Remove 10 (all). Accepted upstream.
+  * debian/upstream.changelog
+    - Update from upstream.
+
+ -- Jari Aalto <jari.aalto@cante.net>  Fri, 15 Jun 2012 10:53:47 +0300
+
+cloc (1.55-2) unstable; urgency=low
+
+  * debian/compat
+    - Update to 9.
+  * debian/control
+    - (Build-Depends): debhelper 9.
+  * debian/patches
+    - (10): New. Fix perl warning.
+
+ -- Jari Aalto <jari.aalto@cante.net>  Wed, 15 Feb 2012 16:08:17 -0500
+
+cloc (1.55-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/control
+    - (Standards-Version): Update to 3.9.2.
+  * debian/copyright
+    - Update to DEP5.
+  * debian/copyright-update.debhelper.log
+    - Remove; unnecessary.
+  * debian/rules
+    - (get-changelog): Fix typo in sed command.
+  * debian/upstream.changelog
+    - Update.
+
+ -- Jari Aalto <jari.aalto@cante.net>  Wed, 15 Feb 2012 16:06:17 -0500
+
+cloc (1.53-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/compat
+    - Update to 8.
+  * debian/control
+    - (Build-Depends): update to debhelper 8.
+    - (Standards-Version): 3.9.1.
+  * debian/patches
+    - Delete all, not applicable for 1.53.
+  * debian/rules
+    - (CHANGELOG, BIN): New variables.
+    - (binary-indep): Remove. Use plain dh(1).
+    - (override_dh_installchangelogs): New.
+
+ -- Jari Aalto <jari.aalto@cante.net>  Tue, 12 Oct 2010 00:51:46 +0300
+
+cloc (1.09-1) unstable; urgency=low
+
+  * Initial release (Closes: #574247).
+
+ -- Jari Aalto <jari.aalto@cante.net>  Thu, 18 Mar 2010 09:28:09 +0200

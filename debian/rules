@@ -1,4 +1,34 @@
 #!/usr/bin/make -f
 
+include /usr/share/dpkg/pkg-info.mk
+
+PACKAGE 	= cloc
+BIN		= $(PACKAGE)
+BINDIR  	= debian/$(PACKAGE)/usr/bin
+DOCDIR  	= debian/$(PACKAGE)/usr/share/doc/$(PACKAGE)/doc
+PODDATE		= $(shell date --date=@$(SOURCE_DATE_EPOCH) -u "+%Y-%m-%d")
+export PODDATE
+
+override_dh_auto_build:
+	rm -f $(PACKAGE)/Unix/$(PACKAGE).1
+	cd Unix && $(MAKE) man
+
+override_dh_auto_install:
+	install -D -m 755 Unix/$(BIN) $(BINDIR)/$(PACKAGE)
+
+override_dh_installchangelogs:
+	dh_installchangelogs Unix/NEWS
+
+override_dh_auto_test:
+ifeq (,$(filter nocheck,$(DEB_BUILD_OPTIONS)))
+	cd Unix && make test
+endif
+
+override_dh_auto_clean:
+	# clean up after tests; unfortunately, this will be brittle
+	rm -f tests/inputs/issues/540/hello.f
+	rm -f tests/inputs/issues/132/ignore_git/hi.py
+	dh_auto_clean
+
 %:
-	dh $@
+	dh  $@
