@@ -1,3 +1,11 @@
+cloc (2.00-1) unstable; urgency=medium
+
+  * New upstream version 2.00
+  * Freshen years in debian/copyright
+  * Bump Standards-Version to 4.7.0
+
+ -- tony mancill <tmancill@debian.org>  Sun, 23 Jun 2024 19:53:33 -0700
+
 cloc (1.98-1) unstable; urgency=medium
 
   * New upstream version 1.98

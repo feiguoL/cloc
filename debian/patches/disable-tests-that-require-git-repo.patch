@@ -84,7 +84,7 @@ Forwarded: not-needed
                     'cd'   => '../tests/inputs/issues/166',
 --- a/Unix/t/02_git.t
 +++ b/Unix/t/02_git.t
-@@ -94,7 +94,7 @@
+@@ -108,7 +108,7 @@
      print "Directory 'cloc_submodule_test' is not found; git tests skipped.\n";
      print "To enable the tests, create the directory with\n";
      print "    git clone https://github.com/AlDanial/cloc_submodule_test.git\n";

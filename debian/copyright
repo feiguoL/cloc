@@ -8,7 +8,7 @@ X-Upstream-Bugs:https://github.com/AlDanial/cloc/issues
 X-Source: https://github.com/AlDanial/cloc
 
 Files: *
-Copyright: Copyright (C) 2006-2023 Al Danial <al.danial@gmail.com>
+Copyright: Copyright (C) 2006-2024 Al Danial <al.danial@gmail.com>
 License: GPL-2+
 X-License-Comment:
  [from cloc.pl: contains the following and standard GPL-2+]
@@ -78,7 +78,7 @@ X-License-Comment:
 Files: debian/*
 Copyright:
  2010-2016 Jari Aalto <jari.aalto@cante.net>
- 2018-2023 tony mancill <tmancill@debian.org>
+ 2018-2024 tony mancill <tmancill@debian.org>
 License: GPL-2+
 
 License: GPL-2+

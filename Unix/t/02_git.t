@@ -85,6 +85,20 @@ my @Tests = (
                     'cd'   => 'cloc_submodule_test',
                 },
 
+                {
+                    'name' => '--git-diff-{rel,all} with --exclude-list-file, #735',
+                    'args' => '--exclude-list-file ../../tests/inputs/issues/735/excludes.txt --git --diff f15bf042b f647093e8b',
+                    'ref'  => '../tests/outputs/issues/735/results.yaml',
+                    'cd'   => 'cloc_submodule_test',
+                },
+
+                {
+                    'name' => '--vcs=git from non-git directory, #772',
+                    'args' => '--vcs=git cloc_submodule_test',
+                    'ref'  => '../tests/outputs/issues/772/results.yaml',
+                    'cd'   => '.',
+                },
+
             );
 
 my $Verbose = 0;
